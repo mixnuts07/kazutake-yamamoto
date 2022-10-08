@@ -11,41 +11,60 @@ import { SiPython } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
 
-// TODO anyとlink?の解消
+// TODO anyの解消
 type LangType = {
   name: string;
-  link?: string;
+  href: string;
   icon: any;
   asterisk?: boolean;
 };
 
-// TODO anyとlinkの解消
+// TODO anyの解消
 const languages: any = [
-  { name: "TypeScript", link: "", icon: <SiTypescript /> },
-  { name: "React.js", link: "", icon: <SiReact /> },
-  { name: "Next.js", link: "", icon: <SiNextdotjs />, asterisk: true },
-  { name: "Solidity", link: "", icon: <SiSolidity />, asterisk: true },
-  { name: "Vue.js", link: "", icon: <FaVuejs /> },
-  { name: "Nuxt.js", link: "", icon: <SiNextdotjs /> },
-  { name: "Prisma", link: "", icon: <SiPrisma /> },
-  { name: "Node.js", link: "", icon: <FaNode /> },
-  { name: "Nest.js", link: "", icon: <SiNestjs /> },
-  { name: "Python", link: "", icon: <SiPython /> },
-  { name: "AWS", link: "", icon: <FaAws /> },
-  { name: "PostgreSQL", link: "", icon: <SiPostgresql /> },
+  {
+    name: "TypeScript",
+    href: "https://www.typescriptlang.org/",
+    icon: <SiTypescript />,
+  },
+  { name: "React.js", href: "https://ja.reactjs.org/", icon: <SiReact /> },
+  {
+    name: "Next.js",
+    href: "https://nextjs.org/",
+    icon: <SiNextdotjs />,
+    asterisk: true,
+  },
+  {
+    name: "Solidity",
+    href: "https://docs.soliditylang.org/en/v0.8.17/",
+    icon: <SiSolidity />,
+    asterisk: true,
+  },
+  {
+    name: "Vue.js",
+    href: "https://jp.vuejs.org/index.html",
+    icon: <FaVuejs />,
+  },
+  { name: "Nuxt.js", href: "https://nuxtjs.org/", icon: <SiNextdotjs /> },
+  { name: "Prisma", href: "https://www.prisma.io/", icon: <SiPrisma /> },
+  { name: "Node.js", href: "https://nodejs.org/ja/docs/", icon: <FaNode /> },
+  { name: "Nest.js", href: "https://nestjs.com/", icon: <SiNestjs /> },
+  { name: "Python", href: "https://www.python.org/doc/", icon: <SiPython /> },
+  { name: "AWS", href: "https://aws.amazon.com/jp/", icon: <FaAws /> },
+  {
+    name: "PostgreSQL",
+    href: "https://www.postgresql.org/",
+    icon: <SiPostgresql />,
+  },
 ];
 
 const Skills = () => {
-  // <a
-  //           href="https://ja.reactjs.org/"
-  //           target="_blank"
-  //           rel="noreferrer"
-  //         ></a>
   return (
     <div className="grid gap-10 grid-cols-3">
       {languages.map((language) => (
         <div key={language.name}>
-          {language.icon}
+          <a href={language.href} target="_blank" rel="noreferrer">
+            {language.icon}
+          </a>
           <h3>{language.name}</h3>
           {language.asterisk && <h5>*</h5>}
         </div>

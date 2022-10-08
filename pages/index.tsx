@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import { useState } from "react";
+import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Bio from "../components/Bio";
@@ -8,6 +8,7 @@ import Profile from "../components/Profile";
 import Skills from "../components/Skills";
 
 const Home: NextPage = () => {
+  // TODO darkMode, toggleModeをHeaderコンポーネントから渡すようにする（子→親）
   const [darkMode, setDarkMode] = useState<string>("dark");
   const toggleMode = () => {
     darkMode === "dark" ? setDarkMode("") : setDarkMode("dark");
@@ -19,9 +20,11 @@ const Home: NextPage = () => {
         <meta name="description" content="For Learning" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-blue max-w-4/5 mx-auto dark:bg-dark dark:text-whitesmoke">
+      <main className="bg-blue mx-auto dark:bg-dark dark:text-whitesmoke">
         <Header />
-        <button onClick={toggleMode}>Toggle Mode</button>
+        <button className="mt-24" onClick={toggleMode}>
+          Toggle Mode
+        </button>
         <Bio />
         <Profile />
         <Skills />
