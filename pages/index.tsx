@@ -2,6 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { useState } from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Bio from "../components/Bio";
+import Profile from "../components/Profile";
+import Skills from "../components/Skills";
 
 const Home: NextPage = () => {
   const [darkMode, setDarkMode] = useState<string>("dark");
@@ -16,10 +20,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <button onClick={toggleMode}>Toggle Mode</button>
-      <body className="bg-blue max-w-4/5 mx-auto dark:bg-dark">
-        <h1 className="dark:text-whitesmoke">HEY</h1>
-      </body>
+      <main className="bg-blue max-w-4/5 mx-auto dark:bg-dark">
+        <button onClick={toggleMode}>Toggle Mode</button>
+        <Bio />
+        <Profile />
+        <Skills />
+      </main>
+      <Footer />
     </div>
   );
 };
