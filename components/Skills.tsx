@@ -42,7 +42,7 @@ const Skills = () => {
   //           rel="noreferrer"
   //         ></a>
   return (
-    <div className="grid gap-10 grid-cols-3 dark:text-whitesmoke">
+    <div className="grid gap-10 grid-cols-3">
       {languages.map((language) => (
         <div key={language.name}>
           {language.icon}

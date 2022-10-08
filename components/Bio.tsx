@@ -1,6 +1,6 @@
 const Bio = () => {
   return (
-    <div className="dark:text-whitesmoke">
+    <div>
       <h3 className="title-section">Bio</h3>
       <div className="bio">
         <span className="left">2021.3</span>

@@ -3,7 +3,7 @@ import { GrLanguage } from "react-icons/gr";
 
 const Header = () => {
   return (
-    <div className="max-width-4/5">
+    <div>
       <a href="https://github.com/mixnuts07" target="_blank" rel="noreferrer">
         <AiFillGithub />
       </a>

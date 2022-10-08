@@ -19,14 +19,14 @@ const Home: NextPage = () => {
         <meta name="description" content="For Learning" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <main className="bg-blue max-w-4/5 mx-auto dark:bg-dark">
+      <main className="bg-blue max-w-4/5 mx-auto dark:bg-dark dark:text-whitesmoke">
+        <Header />
         <button onClick={toggleMode}>Toggle Mode</button>
         <Bio />
         <Profile />
         <Skills />
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 };
