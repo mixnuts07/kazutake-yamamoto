@@ -16,15 +16,8 @@ module.exports = {
       "4/5": "80%",
     },
     colors: {
-      blue: "#1fb6ff",
-      purple: "#7e5bef",
-      pink: "#ff49db",
-      orange: "#ff7849",
-      green: "#13ce66",
-      yellow: "#ffc82c",
-      "gray-dark": "#273444",
-      gray: "#8492a6",
-      "gray-light": "#d3dce6",
+      dark: "#001E22",
+      whitesmoke: "#f5f5f5",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
