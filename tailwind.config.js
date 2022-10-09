@@ -13,11 +13,13 @@ module.exports = {
       xl: "1440px",
     },
     maxWidth: {
-      "4/5": "80%",
+      "1/2": "50%",
+      1: "100%",
     },
     colors: {
       dark: "#001E22",
       whitesmoke: "#f5f5f5",
+      lime: "rgb(54,83,20)",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],

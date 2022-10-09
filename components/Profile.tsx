@@ -1,5 +1,5 @@
 import Image from "next/image";
-const Profile = () => {
+const Profile = ({ t }) => {
   const face = require("../public/face.jpeg");
   type BirthDayType = {
     year: number;
@@ -25,10 +25,11 @@ const Profile = () => {
     return age;
   };
   return (
-    <div className="mt-20">
-      <h1 className="name">Kazutake Yamamoto</h1>
-      <p className="my-birth">1998.07({getAge(birthday)})</p>
-      <div className="face-des">
+    <div>
+      <h1>Kazutake Yamamoto</h1>
+      <p>1998.07({getAge(birthday)})</p>
+      <div>
+        <h3 className="whitespace-pre-wrap">{t("profile.1")}</h3>
         <Image src={face} alt="face" width={80} height={80} />
       </div>
     </div>

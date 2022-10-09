@@ -2,9 +2,9 @@ import { AiFillGithub } from "react-icons/ai";
 import { MdOutlineLanguage } from "react-icons/md";
 import { BsBrightnessLow } from "react-icons/bs";
 import { MdOutlineDarkMode } from "react-icons/md";
-const Header = (darkMode, toggleDarkMode) => {
+const Header = ({ darkMode, toggleDarkMode, ChangeLang }) => {
   return (
-    <div className="top-0 fixed z-50 grid grid-cols-2">
+    <div className="t-0 fixed z-10 grid grid-cols-2">
       <div className="flex">
         <a href="https://github.com/mixnuts07" target="_blank" rel="noreferrer">
           <AiFillGithub />
@@ -17,7 +17,7 @@ const Header = (darkMode, toggleDarkMode) => {
         ) : (
           <MdOutlineDarkMode onClick={toggleDarkMode} />
         )}
-        <MdOutlineLanguage />
+        <MdOutlineLanguage onClick={ChangeLang} />
       </div>
     </div>
   );
