@@ -28,8 +28,8 @@ const Profile = ({ t }) => {
     <div>
       <h1>Kazutake Yamamoto</h1>
       <p>1998.07({getAge(birthday)})</p>
-      <div>
-        <h3 className="whitespace-pre-wrap">{t("profile.1")}</h3>
+      <div className="flex">
+        <h3>{t("profile.1")}</h3>
         <Image src={face} alt="face" width={80} height={80} />
       </div>
     </div>

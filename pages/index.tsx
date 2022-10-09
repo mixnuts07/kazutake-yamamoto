@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { IconContext } from "react-icons";
 import Head from "next/head";
 import Header from "../components/Header";
 import ThreeObj from "../components/Flower";
@@ -33,19 +34,20 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="lg:max-w-1/2 max-w-1 mx-auto text-whitesmoke bg-lime dark:bg-dark ">
-        <Header
-          darkMode={darkMode}
-          toggleDarkMode={toggleDarkMode}
-          ChangeLang={ChangeLang}
-        />
-        <ThreeObj />
-        <Profile t={t} />
-        <Bio t={t} />
-        <Skills />
-        <Footer t={t} />
+        <IconContext.Provider value={{ className: "icon-style" }}>
+          <Header
+            darkMode={darkMode}
+            toggleDarkMode={toggleDarkMode}
+            ChangeLang={ChangeLang}
+          />
+          <ThreeObj />
+          <Profile t={t} />
+          <Bio t={t} />
+          <Skills />
+          <Footer t={t} />
+        </IconContext.Provider>
       </main>
     </div>
   );
 };
-
 export default Home;

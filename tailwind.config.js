@@ -14,6 +14,7 @@ module.exports = {
     },
     maxWidth: {
       "1/2": "50%",
+      "4/5": "80%",
       1: "100%",
     },
     colors: {
