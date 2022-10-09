@@ -4,7 +4,7 @@ import { BsBrightnessLow } from "react-icons/bs";
 import { MdOutlineDarkMode } from "react-icons/md";
 const Header = ({ darkMode, toggleDarkMode, ChangeLang }) => {
   return (
-    <div className="t-0 fixed z-10 grid grid-cols-2">
+    <div className="fixed z-10 grid grid-cols-2">
       <div className="flex">
         <a href="https://github.com/mixnuts07" target="_blank" rel="noreferrer">
           <AiFillGithub />

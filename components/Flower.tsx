@@ -36,7 +36,7 @@ function CubeFrame(props) {
 
 const ThreeObj = () => {
   return (
-    <div>
+    <div className="pt-20">
       <Canvas>
         <pointLight position={[10, 10, 10]} />
         <Cube position={[0, 0, 0]} />
