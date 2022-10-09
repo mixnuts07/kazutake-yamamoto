@@ -20,7 +20,7 @@ type LangType = {
 };
 
 // TODO anyの解消
-const languages: any = [
+const languages: LangType[] = [
   {
     name: "TypeScript",
     href: "https://www.typescriptlang.org/",
@@ -59,16 +59,19 @@ const languages: any = [
 
 const Skills = () => {
   return (
-    <div className="grid gap-10 grid-cols-3">
-      {languages.map((language) => (
-        <div key={language.name}>
-          <a href={language.href} target="_blank" rel="noreferrer">
-            {language.icon}
-          </a>
-          <h3>{language.name}</h3>
-          {language.asterisk && <h5>*</h5>}
-        </div>
-      ))}
+    <div>
+      <h3>Skills</h3>
+      <div className="grid gap-10 grid-cols-3">
+        {languages.map((language) => (
+          <div key={language.name}>
+            <a href={language.href} target="_blank" rel="noreferrer">
+              {language.icon}
+            </a>
+            <h3 className="underline decoration-dotted">{language.name}</h3>
+            {language.asterisk && <h5>*</h5>}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

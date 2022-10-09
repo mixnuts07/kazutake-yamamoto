@@ -25,9 +25,9 @@ const Profile = () => {
     return age;
   };
   return (
-    <div>
+    <div className="mt-20">
       <h1 className="name">Kazutake Yamamoto</h1>
-      <p className="my-birth">1998.07.19({getAge(birthday)})</p>
+      <p className="my-birth">1998.07({getAge(birthday)})</p>
       <div className="face-des">
         <Image src={face} alt="face" width={80} height={80} />
       </div>
