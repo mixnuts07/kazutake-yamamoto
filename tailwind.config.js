@@ -26,8 +26,7 @@ module.exports = {
       to: "#2b2bc8",
     },
     fontFamily: {
-      sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
+      base: ["Noto Sans Japanese"],
       title: ["Alfa Slab One"],
     },
     fontSize: {

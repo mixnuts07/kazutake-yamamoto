@@ -8,27 +8,30 @@ const Footer = ({ t }) => {
     <div className="title">
       <h3 className="title-section">Contact</h3>
       <h5>{t("footer.1")}</h5>
-      <div className="flex">
+      <div className="flex pt-4">
         <a
           href="https://twitter.com/mixed_nuts_nuts"
           target="_blank"
           rel="noreferrer"
+          className="hover:animate-bounce"
         >
-          <BsTwitter className="hover:animate-bounce" size="2.5rem" />
+          <BsTwitter size="2.5rem" />
         </a>
         <a
           href="https://www.facebook.com/profile.php?id=100070009847029"
           target="_blank"
           rel="noreferrer"
+          className="hover:animate-bounce pl-3"
         >
-          <BsFacebook className="hover:animate-bounce" size="2.5rem" />
+          <BsFacebook size="2.5rem" />
         </a>
         <a
           href="https://www.linkedin.com/in/kazutake-yamamoto-096059224?original_referer="
           target="_blank"
           rel="noreferrer"
+          className="hover:animate-bounce pl-3"
         >
-          <BsLinkedin className="hover:animate-bounce" size="2.5rem" />
+          <BsLinkedin size="2.5rem" />
         </a>
       </div>
       <div className="b-0 pt-10 flex justify-center">

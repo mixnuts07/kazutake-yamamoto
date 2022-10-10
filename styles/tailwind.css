@@ -1,5 +1,5 @@
 .title {
-  @apply pt-10 px-3 tracking-normal;
+  @apply pt-10 px-3 tracking-normal font-base;
 }
 .title-section {
   @apply pb-5 underline opacity-60 font-title text-base;

@@ -91,7 +91,7 @@ const Skills = ({ t }) => {
       <h3 className="title-section">Skills</h3>
       <div className="grid gap-10 grid-cols-3">
         {languages.map((language) => (
-          <div key={language.name} className="mx-auto">
+          <div key={language.name} className="m-auto">
             <a href={language.href} target="_blank" rel="noreferrer">
               {language.icon}
             </a>
