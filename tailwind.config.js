@@ -30,7 +30,9 @@ module.exports = {
       title: ["Alfa Slab One"],
     },
     fontSize: {
-      base: "2.3rem",
+      base: "1.3rem",
+      title: "2.3rem",
+      small: "1.0rem",
     },
     letterSpacing: {
       normal: "0.1em",

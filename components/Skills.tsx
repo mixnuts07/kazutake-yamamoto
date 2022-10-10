@@ -89,12 +89,14 @@ const Skills = ({ t }) => {
   return (
     <div className="title">
       <h3 className="title-section">Skills</h3>
-      <div className="grid gap-10 grid-cols-3">
+      <div className="grid gap-8 grid-cols-3">
         {languages.map((language) => (
-          <div key={language.name} className="m-auto">
-            <a href={language.href} target="_blank" rel="noreferrer">
-              {language.icon}
-            </a>
+          <div key={language.name}>
+            <div className="">
+              <a href={language.href} target="_blank" rel="noreferrer">
+                {language.icon}
+              </a>
+            </div>
             <div className="flex">
               <h3 className="underline decoration-dotted">{language.name}</h3>
               <h5 className="pl-1">{language.asterisk}</h5>
@@ -102,7 +104,7 @@ const Skills = ({ t }) => {
           </div>
         ))}
       </div>
-      <h6 className="pt-4">{t("skills.1")}</h6>
+      <h6 className="pt-4 text-small">{t("skills.1")}</h6>
     </div>
   );
 };

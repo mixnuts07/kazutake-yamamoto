@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import Profile from "../components/Profile";
 import Bio from "../components/Bio";
 import Skills from "../components/Skills";
+import Loading from "../components/Loading";
 
 const Home: NextPage = () => {
   // 多言語の切り替え
@@ -46,6 +47,7 @@ const Home: NextPage = () => {
           <Bio t={t} />
           <Skills t={t} />
           <Footer t={t} />
+          <Loading />
         </IconContext.Provider>
       </main>
     </div>

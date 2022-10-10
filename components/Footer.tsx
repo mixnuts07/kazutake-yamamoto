@@ -34,8 +34,8 @@ const Footer = ({ t }) => {
           <BsLinkedin size="2.5rem" />
         </a>
       </div>
-      <div className="b-0 pt-10 flex justify-center">
-        <small>©︎{thisYear} kazutakeyamamoto</small>
+      <div className="mb-6 pt-10 flex justify-center">
+        <small className="text-small">©︎{thisYear} kazutakeyamamoto</small>
       </div>
     </div>
   );
