@@ -25,12 +25,21 @@ const Profile = ({ t }) => {
     return age;
   };
   return (
-    <div>
+    <div className="pt-10">
       <h1>Kazutake Yamamoto</h1>
       <p>1998.07({getAge(birthday)})</p>
       <div className="flex">
-        <h3>{t("profile.1")}</h3>
-        <Image src={face} alt="face" width={80} height={80} />
+        <div>
+          <h3>{t("profile.1")}</h3>
+          <h3>{t("profile.2")}</h3>
+        </div>
+        <Image
+          src={face}
+          alt="face"
+          width={140}
+          height={140}
+          className="rounded-full"
+        />
       </div>
     </div>
   );

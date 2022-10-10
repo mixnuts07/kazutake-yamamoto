@@ -21,6 +21,9 @@ module.exports = {
       dark: "#001E22",
       whitesmoke: "#f5f5f5",
       lime: "rgb(54,83,20)",
+      from: "#8b508c",
+      via: "#6764c7",
+      to: "#2b2bc8",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
@@ -33,6 +36,12 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "2rem",
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
       },
     },
   },

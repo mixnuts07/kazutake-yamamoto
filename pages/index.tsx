@@ -26,6 +26,7 @@ const Home: NextPage = () => {
   const ChangeLang = (): void => {
     setLang(lang === "en" ? "ja" : "en");
   };
+  // TODO <main>dark:from(to)-darkはbg-gradient-to-rを設定してるからこの書き方になった。綺麗な書き方ないか再考。
   return (
     <div className={darkMode}>
       <Head>
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
         <meta name="description" content="For Learning" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="lg:max-w-1/2 max-w-1 mx-auto text-whitesmoke bg-lime dark:bg-dark ">
+      <main className="lg:max-w-1/2 max-w-1 mx-auto text-whitesmoke bg-gradient-to-r from-from via-via to-to dark:from-dark dark:to-dark">
         <IconContext.Provider value={{ className: "icon-style" }}>
           <Header
             darkMode={darkMode}

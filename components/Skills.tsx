@@ -16,7 +16,7 @@ type LangType = {
   name: string;
   href: string;
   icon: any;
-  asterisk?: boolean;
+  asterisk?: string;
 };
 
 // TODO anyの解消
@@ -35,13 +35,13 @@ const languages: LangType[] = [
     name: "Next.js",
     href: "https://nextjs.org/",
     icon: <SiNextdotjs size="2.5rem" />,
-    asterisk: true,
+    asterisk: "*",
   },
   {
     name: "Solidity",
     href: "https://docs.soliditylang.org/en/v0.8.17/",
     icon: <SiSolidity size="2.5rem" />,
-    asterisk: true,
+    asterisk: "*",
   },
   {
     name: "Vue.js",
@@ -87,19 +87,22 @@ const languages: LangType[] = [
 
 const Skills = () => {
   return (
-    <div>
-      <h3>Skills</h3>
+    <div className="pt-10">
+      <h3 className="pb-5 underline opacity-60">Skills</h3>
       <div className="grid gap-10 grid-cols-3">
         {languages.map((language) => (
-          <div key={language.name}>
+          <div key={language.name} className="mx-auto">
             <a href={language.href} target="_blank" rel="noreferrer">
               {language.icon}
             </a>
-            <h3 className="underline decoration-dotted">{language.name}</h3>
-            {language.asterisk && <h5>*</h5>}
+            <div className="flex">
+              <h3 className="underline decoration-dotted">{language.name}</h3>
+              <h5 className="pl-1">{language.asterisk}</h5>
+            </div>
           </div>
         ))}
       </div>
+      <h6 className="pt-4">(* ... 実務経験無)</h6>
     </div>
   );
 };
