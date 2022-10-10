@@ -28,6 +28,13 @@ module.exports = {
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
+      title: ["Alfa Slab One"],
+    },
+    fontSize: {
+      base: "2.3rem",
+    },
+    letterSpacing: {
+      normal: "0.1em",
     },
     extend: {
       spacing: {

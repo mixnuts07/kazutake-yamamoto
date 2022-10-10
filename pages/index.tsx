@@ -44,7 +44,7 @@ const Home: NextPage = () => {
           <ThreeObj />
           <Profile t={t} />
           <Bio t={t} />
-          <Skills />
+          <Skills t={t} />
           <Footer t={t} />
         </IconContext.Provider>
       </main>

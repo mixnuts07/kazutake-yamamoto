@@ -5,8 +5,11 @@
   },
   "bio": {
     "1": "Graduated from Kansai University, Faculty of Informatics",
-    "2": "Joined an AI development venture in Tokyo as a machine learning engineer.",
+    "2": "Joined AI development venture in Tokyo. (Machine Learning Engineer)",
     "3": "Freelancer(Systems Engineer)"
+  },
+  "skills": {
+    "1": "( * ... No work experience)"
   },
   "footer": {
     "1": "Please contact DM on each SNS."

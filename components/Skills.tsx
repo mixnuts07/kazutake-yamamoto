@@ -85,10 +85,10 @@ const languages: LangType[] = [
   },
 ];
 
-const Skills = () => {
+const Skills = ({ t }) => {
   return (
-    <div className="pt-10">
-      <h3 className="pb-5 underline opacity-60">Skills</h3>
+    <div className="title">
+      <h3 className="title-section">Skills</h3>
       <div className="grid gap-10 grid-cols-3">
         {languages.map((language) => (
           <div key={language.name} className="mx-auto">
@@ -102,7 +102,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-      <h6 className="pt-4">(* ... 実務経験無)</h6>
+      <h6 className="pt-4">{t("skills.1")}</h6>
     </div>
   );
 };

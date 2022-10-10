@@ -25,7 +25,7 @@ const Profile = ({ t }) => {
     return age;
   };
   return (
-    <div className="pt-10">
+    <div className="pt-10 px-3 tracking-normal">
       <h1>Kazutake Yamamoto</h1>
       <p>1998.07({getAge(birthday)})</p>
       <div className="flex">
