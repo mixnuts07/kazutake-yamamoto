@@ -14,9 +14,9 @@ const Header = ({ darkMode, toggleDarkMode, ChangeLang }) => {
       </div>
       <div className="flex">
         {darkMode === "dark" ? (
-          <BsBrightnessLow onClick={toggleDarkMode} size="2.5rem" />
-        ) : (
           <MdOutlineDarkMode onClick={toggleDarkMode} size="2.5rem" />
+        ) : (
+          <BsBrightnessLow onClick={toggleDarkMode} size="2.5rem" />
         )}
         <MdOutlineLanguage onClick={ChangeLang} size="2.5rem" />
       </div>

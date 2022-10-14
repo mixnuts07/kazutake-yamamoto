@@ -8,6 +8,7 @@ import { SiPrisma } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
 import { SiNestjs } from "react-icons/si";
 import { SiPython } from "react-icons/si";
+import { SiGraphql } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
 
@@ -79,6 +80,11 @@ const languages: LangType[] = [
     icon: <FaAws size="2.5rem" />,
   },
   {
+    name: "GraphQL",
+    href: "https://graphql.org/",
+    icon: <SiGraphql size="2.5rem" />,
+  },
+  {
     name: "PostgreSQL",
     href: "https://www.postgresql.org/",
     icon: <SiPostgresql size="2.5rem" />,
@@ -104,7 +110,7 @@ const Skills = ({ t }) => {
           </div>
         ))}
       </div>
-      <h6 className="pt-4 text-small">{t("skills.1")}</h6>
+      <h6 className="pt-6 text-small">{t("skills.1")}</h6>
     </div>
   );
 };

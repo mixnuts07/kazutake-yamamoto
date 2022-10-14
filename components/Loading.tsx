@@ -1,6 +1,6 @@
 import style from "../styles/loading.module.scss";
 
-const Loading = () => {
+const Loading = ({ EnterSite }) => {
   return (
     <div className={style.computer}>
       <div className={style.side}></div>
@@ -19,8 +19,9 @@ const Loading = () => {
           &#8203;b&#8203;u&#8203;t&#8203;t&#8203;o&#8203;n&#8203;↓
         </div>
       </div>
-      <div className={style.button}></div>
-      {/* <button>ENTER</button> */}
+      <div className={style.button} onClick={EnterSite}>
+        E&#8203;N&#8203;T&#8203;E&#8203;R
+      </div>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import "../styles/tailwind.css";
 import "../styles/style.css";
 import "../i18n/config";
 
+// Next.jsで全ページ共通の処理を挟むために書く
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }

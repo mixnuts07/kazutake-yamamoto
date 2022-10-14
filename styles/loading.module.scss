@@ -213,9 +213,14 @@
   .button {
     -webkit-transform: skew(-10deg, 10deg);
     transform: skew(-10deg, 10deg);
-    background-color: #242f45;
-    height: 20px;
-    width: 40px;
+    background-color: #001e22;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 40px;
+    width: 70px;
     top: 260px;
   }
 }
