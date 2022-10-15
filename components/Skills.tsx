@@ -20,7 +20,6 @@ type LangType = {
   asterisk?: string;
 };
 
-// TODO anyの解消
 const languages: LangType[] = [
   {
     name: "TypeScript",

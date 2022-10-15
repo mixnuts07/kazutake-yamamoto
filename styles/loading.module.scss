@@ -1,5 +1,6 @@
 @import "_breakpoint";
 @import "_mixin";
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Noto+Sans+JP&family=Roboto+Condensed:ital,wght@1,300&display=swap");
 
 @keyframes type {
   0% {
@@ -117,8 +118,7 @@
     height: 65px;
     -webkit-transform: skew(-10deg, 10deg);
     transform: skew(-10deg, 10deg);
-    // TODO フォント変更
-    font-family: monospace;
+    font-family: "Alkalami", serif, monospace;
   }
 
   .text div {
