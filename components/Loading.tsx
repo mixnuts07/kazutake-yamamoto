@@ -2,7 +2,7 @@ import style from "../styles/loading.module.scss";
 
 const Loading = ({ EnterSite }) => {
   return (
-    <div className="flex justify-center max-w-1/2">
+    <div className="flex justify-center max-w-1/2 bg-dark">
       <div className={style.computer}>
         <div className={style.side}></div>
         <div className={style.top}></div>
