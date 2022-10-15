@@ -26,20 +26,22 @@ const Profile = ({ t }) => {
   };
   return (
     <div className="title">
-      <h1>Kazutake Yamamoto</h1>
-      <p>1998.07({getAge(birthday)})</p>
-      <div className="flex">
-        <div>
-          <h3>{t("profile.1")}</h3>
-          <h3>{t("profile.2")}</h3>
+      <div className="animate-fadeInSection">
+        <h1>Kazutake Yamamoto</h1>
+        <p>1998.07({getAge(birthday)})</p>
+        <div className="flex">
+          <div>
+            <h3>{t("profile.1")}</h3>
+            <h3>{t("profile.2")}</h3>
+          </div>
+          <Image
+            src={face}
+            alt="face"
+            width={140}
+            height={140}
+            className="rounded-full"
+          />
         </div>
-        <Image
-          src={face}
-          alt="face"
-          width={140}
-          height={140}
-          className="rounded-full"
-        />
       </div>
     </div>
   );

@@ -45,10 +45,13 @@ module.exports = {
       borderRadius: {
         "4xl": "2rem",
       },
+      animation: {
+        fadeInSection: "fadeInSection 3s ease-in",
+      },
       keyframes: {
-        wiggle: {
-          "0%, 100%": { transform: "rotate(-3deg)" },
-          "50%": { transform: "rotate(3deg)" },
+        fadeInSection: {
+          "0%": { opacity: 0, transform: "translateY(30px)" },
+          "100%": { opacity: 1, transform: "translateY(0px)" },
         },
       },
     },

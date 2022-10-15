@@ -28,9 +28,3 @@ const Home = () => {
   );
 };
 export default Home;
-// const root = ReactDOM.createRoot(document.getElementById("root")!);
-// root.render(
-//   <React.StrictMode>
-//     <Entering />
-//   </React.StrictMode>
-// );

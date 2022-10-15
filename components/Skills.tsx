@@ -95,7 +95,7 @@ const Skills = ({ t }) => {
   return (
     <div className="title">
       <h3 className="title-section">Skills</h3>
-      <div className="grid gap-8 grid-cols-3">
+      <div className="grid gap-8 grid-cols-3 animate-fadeInSection">
         {languages.map((language) => (
           <div key={language.name}>
             <div className="">

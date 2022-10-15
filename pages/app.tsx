@@ -30,8 +30,8 @@ const App: NextPage = () => {
   return (
     <div className={darkMode}>
       <Head>
-        <title>MyApp</title>
-        <meta name="description" content="For Learning" />
+        <title>KazutakeYamamoto</title>
+        <meta name="description" content="ポートフォリオサイト" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="lg:max-w-1/2 max-w-1 mx-auto text-whitesmoke bg-gradient-to-r from-from via-via to-to dark:from-dark dark:to-dark">
