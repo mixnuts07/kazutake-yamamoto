@@ -15,7 +15,11 @@ const Home = () => {
     <div>
       <Suspense
         fallback={
-          <ReactLoading type="bars" color="#f5f5f5" className="react-loading" />
+          <ReactLoading
+            type="spinningBubbles"
+            color="#f5f5f5"
+            className="mx-auto mt-96"
+          />
         }
       >
         <App />

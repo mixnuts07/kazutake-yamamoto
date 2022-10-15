@@ -13,7 +13,7 @@ const Footer = ({ t }) => {
           href="https://twitter.com/mixed_nuts_nuts"
           target="_blank"
           rel="noreferrer"
-          className="hover:animate-bounce"
+          className="animate-bounce"
         >
           <BsTwitter size="2.5rem" />
         </a>
@@ -21,7 +21,7 @@ const Footer = ({ t }) => {
           href="https://www.facebook.com/profile.php?id=100070009847029"
           target="_blank"
           rel="noreferrer"
-          className="hover:animate-bounce pl-3"
+          className="animate-bounce pl-3"
         >
           <BsFacebook size="2.5rem" />
         </a>
@@ -29,7 +29,7 @@ const Footer = ({ t }) => {
           href="https://www.linkedin.com/in/kazutake-yamamoto-096059224?original_referer="
           target="_blank"
           rel="noreferrer"
-          className="hover:animate-bounce pl-3"
+          className="animate-bounce pl-3"
         >
           <BsLinkedin size="2.5rem" />
         </a>

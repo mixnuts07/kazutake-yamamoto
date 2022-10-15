@@ -52,83 +52,34 @@
   }
 }
 
-@keyframes type_three {
+@keyframes bounce {
   0% {
-    width: 0px;
-  }
-  40% {
-    width: 0px;
-  }
-  60% {
-    width: 100%;
+    transform: translateY(0px);
   }
   100% {
-    width: 300px;
+    transform: translateY(-5px);
   }
 }
-
-@-webkit-keyframes type_three {
-  0% {
-    width: 0px;
-  }
-  40% {
-    width: 0px;
-  }
-  60% {
-    width: 100%;
-  }
-  100% {
-    width: 300px;
-  }
-}
-
-@keyframes type_four {
-  0% {
-    width: 0px;
-  }
-  60% {
-    width: 0px;
-  }
-  80% {
-    width: 300px;
-  }
-  100% {
-    width: 300px;
-  }
-}
-
-@-webkit-keyframes type_four {
-  0% {
-    width: 0px;
-  }
-  60% {
-    width: 0px;
-  }
-  80% {
-    width: 300px;
-  }
-  100% {
-    width: 300px;
-  }
-}
-
-// body {
-//   background-color: #001e22;
-// }
 
 .computer {
   border-width: 0;
   top: 70px;
-  width: 600px;
+  width: 5rem;
+  max-width: 80%;
   margin: 0 auto;
+  margin-top: 30%;
+  margin-left: 70%;
   position: relative;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 70%;
+  }
 
   > div {
     position: absolute;
   }
 
   .front {
-    width: 100px;
     top: 54px;
     width: 300px;
     height: 300px;
@@ -154,40 +105,29 @@
     top: 80px;
     left: 40px;
     width: 270px;
-    color: white;
+    color: whitesmoke;
     height: 65px;
     -webkit-transform: skew(-10deg, 10deg);
     transform: skew(-10deg, 10deg);
+    // TODO フォント変更
     font-family: monospace;
   }
 
   .text div {
     width: 0px;
     overflow: hidden;
-    max-height: 19px;
+    max-height: 22px;
   }
 
   .text div:nth-child(1) {
-    -webkit-animation: type 10s linear infinite;
-    animation: type 10s linear infinite;
+    -webkit-animation: type 4s linear infinite;
+    animation: type 6s linear infinite;
     overflow: hidden;
   }
 
   .text div:nth-child(2) {
-    -webkit-animation: type_two 10s linear infinite;
-    animation: type_two 10s linear infinite;
-    overflow: hidden;
-  }
-
-  .text div:nth-child(3) {
-    -webkit-animation: type_three 10s linear infinite;
-    animation: type_three 10s linear infinite;
-    overflow: hidden;
-  }
-
-  .text div:nth-child(4) {
-    -webkit-animation: type_four 10s linear infinite;
-    animation: type_four 10s linear infinite;
+    -webkit-animation: type_two 4s linear infinite;
+    animation: type_two 6s linear infinite;
     overflow: hidden;
   }
 
@@ -213,7 +153,7 @@
   .button {
     -webkit-transform: skew(-10deg, 10deg);
     transform: skew(-10deg, 10deg);
-    background-color: #001e22;
+    background-color: #2b2bc8;
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -222,5 +162,9 @@
     height: 40px;
     width: 70px;
     top: 260px;
+    &:hover {
+      animation: bounce 0.4s ease infinite alternate;
+    }
+    // TODO FontFamily
   }
 }
