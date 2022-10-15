@@ -1,0 +1,7 @@
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints,$breakpoint)} {
+    @content;
+  }
+}
+
+//https://zenn.dev/web_tips/articles/095d7419507ca9

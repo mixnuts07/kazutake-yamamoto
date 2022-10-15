@@ -1,3 +1,6 @@
+@import "_breakpoint";
+@import "_mixin";
+
 @keyframes type {
   0% {
     width: 0px;
@@ -63,26 +66,31 @@
 
 .computer {
   border-width: 0;
-  top: 70px;
-  width: 5rem;
-  max-width: 80%;
+  top: 120px;
+  width: 4rem;
+  max-width: 60%;
   margin: 0 auto;
-  margin-top: 30%;
-  margin-left: 70%;
+  margin-top: 60%;
+  margin-left: 20px;
   position: relative;
 
-  @media screen and (max-width: 767px) {
-    margin-top: 70%;
+  @include mq(md) {
+    margin-top: 50%;
+    margin-left: 60%;
   }
-
+  @include mq(xl) {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
   > div {
     position: absolute;
   }
 
   .front {
     top: 54px;
-    width: 300px;
-    height: 300px;
+    left: 38px;
+    width: 255px;
+    height: 260px;
     -webkit-transform: skew(-10deg, 10deg);
     transform: skew(-10deg, 10deg);
     background-color: #a39a9a;
@@ -90,9 +98,9 @@
 
   .screen {
     top: 70px;
-    left: 20px;
-    width: 270px;
-    height: 200px;
+    left: 60px;
+    width: 220px;
+    height: 170px;
     border-radius: 3px;
     background-color: black;
     -webkit-transform: skew(-10deg, 10deg);
@@ -102,8 +110,8 @@
   .text {
     padding: 5px;
     font-size: 12pt;
-    top: 80px;
-    left: 40px;
+    top: 90px;
+    left: 70px;
     width: 270px;
     color: whitesmoke;
     height: 65px;
@@ -132,20 +140,21 @@
   }
 
   .side {
-    height: 300px;
-    width: 90px;
+    height: 261px;
+    width: 80px;
     background-color: #333;
     top: 54px;
-    left: 300px;
+    left: 290px;
     -webkit-transform: skew(-10deg, -30deg);
     transform: skew(-10deg, -30deg);
   }
 
   .top {
     background-color: #797979;
-    width: 300px;
-    height: 54px;
-    left: 72px;
+    top: 10px;
+    width: 254px;
+    height: 44px;
+    left: 100px;
     -webkit-transform: skew(-60deg, 10deg);
     transform: skew(-60deg, 10deg);
   }
@@ -162,6 +171,7 @@
     height: 40px;
     width: 70px;
     top: 260px;
+    left: 180px;
     &:hover {
       animation: bounce 0.4s ease infinite alternate;
     }
